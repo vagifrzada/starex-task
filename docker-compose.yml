@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  php-cli:
+    build: ./docker/php-cli
+    container_name: php-cli
+    volumes:
+      - ./src:/app
+      - composer_data:/home/appuser/.composer/cache
+
+volumes:
+  composer_data:
