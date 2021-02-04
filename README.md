@@ -6,7 +6,11 @@
 
 ## Initialization
 - `git clone the repository`
+- `make build`  
 - `make composer-install`
 
 ## Execution
 - `make parse`
+
+## Tests
+- `make tests`

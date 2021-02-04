@@ -1,3 +1,5 @@
+build:
+	docker-compose build
 parse:
 	docker-compose run --rm php-cli php parse.php
 composer-install:

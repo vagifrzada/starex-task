@@ -23,7 +23,7 @@ class Parser
     /**
      * @throws ParserException
      */
-    public function parse(): array
+    public function parse(): self
     {
         $crawler = new Crawler($this->getHtmlContent());
 
@@ -36,7 +36,7 @@ class Parser
             $this->fillPriceList($productInfo);
         });
 
-        return $this->priceList;
+        return $this;
     }
 
     /**
